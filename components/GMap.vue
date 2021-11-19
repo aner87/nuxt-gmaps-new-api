@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import GoogleMapsApiLoader from 'google-maps-api-loader'
+import GoogleMapsApiLoader from '@googlemaps/js-api-loader'
 const MarkerClusterer = require('node-js-marker-clusterer');
 export default {
   props: {
