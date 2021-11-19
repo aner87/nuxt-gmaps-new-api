@@ -7,7 +7,8 @@
 
 <script>
 import { Loader } from "@googlemaps/js-api-loader";
-const MarkerClusterer = require("node-js-marker-clusterer");
+import { MarkerClusterer } from "@googlemaps/markerclusterer";
+
 export default {
   props: {
     options: {
