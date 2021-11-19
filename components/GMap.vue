@@ -127,18 +127,13 @@ export default {
       if (Object.keys(this.cluster).length > 0) {
         const map = this.map;
         const markers = this.markers;
+        const clusterOptions = this.cluster.options;
 
-        const clusterOptions = {
-          ...this.cluster.options,
-        };
-
-        this.markerCluster = new MarkerClusterer(
-          {
-            map,
-            markers,
-          },
-          clusterOptions
-        );
+        this.markerCluster = new MarkerClusterer({
+          map,
+          markers,
+          clusterOptions,
+        });
       }
     },
   },
