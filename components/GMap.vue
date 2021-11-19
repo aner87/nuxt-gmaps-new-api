@@ -128,15 +128,17 @@ export default {
         const map = this.map;
         const markers = this.markers;
 
-        const clusterOptions = {
+        /* const clusterOptions = {
           ...this.cluster.options,
-        };
+        }; */
 
-        this.markerCluster = new MarkerClusterer({
-          map,
-          markers,
-          ...this.cluster.options,
-        });
+        this.markerCluster = new MarkerClusterer(
+          {
+            map,
+            markers,
+          },
+          { ...this.cluster.options }
+        );
       }
     },
   },
