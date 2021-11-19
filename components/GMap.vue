@@ -82,8 +82,8 @@ export default {
           GMapSettings["libraries"] = this.$GMaps.libraries;
         }
 
-        const loader = new Loader(GMapSettings)
-        const google = await loader.load()
+        const loader = new Loader(GMapSettings);
+        const google = await loader.load();
         this.$GMaps.google = google;
       } catch (e) {}
     }
@@ -125,9 +125,15 @@ export default {
       this.map["markers"] = this.markers;
 
       if (Object.keys(this.cluster).length > 0) {
-        this.markerCluster = new MarkerClusterer(this.map, this.markers, {
+        const clusterOptions = {
           ...this.cluster.options,
-        });
+        };
+
+        this.markerCluster = new MarkerClusterer(
+          this.map,
+          this.markers,
+          clusterOptions
+        );
       }
     },
   },
