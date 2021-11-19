@@ -129,11 +129,19 @@ export default {
           ...this.cluster.options,
         };
 
-        this.markerCluster = new MarkerClusterer(
+        const map = this.map;
+        const markers = this.markers;
+
+        /*  this.markerCluster = new MarkerClusterer(
           this.map,
           this.markers,
           clusterOptions
-        );
+        ); */
+        
+        this.markerCluster = new MarkerClusterer({
+          map,
+          markers,
+        });
       }
     },
   },
