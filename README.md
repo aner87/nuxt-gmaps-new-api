@@ -1,9 +1,13 @@
-# 🌍 Nuxt GMaps (this is a Fork from https://gitlab.com/broj42/nuxt-gmaps/)
+# 🌍 Nuxt GMaps, updated APIs
+This is a Fork from https://gitlab.com/broj42/nuxt-gmaps/ \
+I simply updated the project to the latest Google Libraries, both for the map and the clusters instances.
+PS: as of now clusters only work with the default aesthetic
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![npm downloads][kofi-src]][kofi-href]
 
+*  *  *  *  *
 Try it out here:
 [Nuxt.js Google Maps Module](https://codesandbox.io/s/6j6zw48l83)
 
