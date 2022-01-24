@@ -1,7 +1,7 @@
 # 🌍 Nuxt GMaps, updated APIs
 This is a Fork from https://gitlab.com/broj42/nuxt-gmaps/ \
 I simply updated the project to the latest Google Libraries, both for the map and the clusters instances. \
-PS: as of now clusters only work with the default aesthetic
+PS: as of now clusters are no longer aesthetically customizable, any contribution to bring this feature back is appreciated.
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
